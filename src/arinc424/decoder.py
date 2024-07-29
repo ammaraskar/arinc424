@@ -196,10 +196,7 @@ def field_008(value, record):
 
 # 5.9 SID/STAR Route Identifier (SID/STAR IDENT)
 def field_009(value, record):
-    if value.strip().isalnum():
-        return value
-    # else:
-    #     raise ValueError("SID/STAR Route Identifier not alphanumeric", value)
+    return value
 
 
 # 5.10 Approach Route Identifier (APPROACH IDENT)
